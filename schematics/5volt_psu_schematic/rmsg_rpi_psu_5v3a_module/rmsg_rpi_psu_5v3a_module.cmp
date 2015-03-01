@@ -1,0 +1,269 @@
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = fre 20 feb 2015 00:55:23 CET
+
+BeginCmp
+TimeStamp = /54A8ED6F;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A8EBDD;
+Reference = C2;
+ValeurCmp = 100uF,63V.,low-ESR;
+IdModule  = capacitor_panasonic_fr_a_100uf;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A8EBD0;
+Reference = C3;
+ValeurCmp = 1000uF,25V.,low-ESR;
+IdModule  = capacitor_multicomp_GPR_1000uF;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A8EED0;
+Reference = C4;
+ValeurCmp = 100nF;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ADE29D;
+Reference = C5;
+ValeurCmp = 100uF,25V.,low-ESR;
+IdModule  = capacitor_panasonic_fr_a_100uf;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AB9E51;
+Reference = D1;
+ValeurCmp = SB560;
+IdModule  = do201-15-DO201-15;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AB9E5D;
+Reference = D2;
+ValeurCmp = SB560;
+IdModule  = do201-15-DO201-15;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AB9E63;
+Reference = D3;
+ValeurCmp = SB560;
+IdModule  = do201-15-DO201-15;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AB9E57;
+Reference = D4;
+ValeurCmp = SB560;
+IdModule  = do201-15-DO201-15;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA9565;
+Reference = D5;
+ValeurCmp = RED;
+IdModule  = led5mm-LED5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AE049F;
+Reference = D6;
+ValeurCmp = 8V7, Zener;
+IdModule  = DO-35;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA0839;
+Reference = D7;
+ValeurCmp = SB560;
+IdModule  = do201-15-DO201-15;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA8A10;
+Reference = D8;
+ValeurCmp = YELLOW;
+IdModule  = led5mm-LED5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA7EA2;
+Reference = D9;
+ValeurCmp = GREEN;
+IdModule  = led5mm-LED5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /54E6AB64;
+Reference = DRILL_HOLE1;
+ValeurCmp = M2_5_DRILL_HOLE;
+IdModule  = M2_50mm-Drill_hole_M2_85mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54E6AB71;
+Reference = DRILL_HOLE2;
+ValeurCmp = M2_5_DRILL_HOLE;
+IdModule  = M2_50mm-Drill_hole_M2_85mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54E6AB77;
+Reference = DRILL_HOLE3;
+ValeurCmp = M2_5_DRILL_HOLE;
+IdModule  = M2_50mm-Drill_hole_M2_85mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54E6AB7D;
+Reference = DRILL_HOLE4;
+ValeurCmp = M2_5_DRILL_HOLE;
+IdModule  = M2_50mm-Drill_hole_M2_85mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A8F7D2;
+Reference = F1;
+ValeurCmp = T.2.5A.;
+IdModule  = fuse_holder_5mm_x_20mm_schurter;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA77AA;
+Reference = F2;
+ValeurCmp = T.2.5A.;
+IdModule  = fuse_holder_5mm_x_20mm_schurter;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA044D;
+Reference = IC1;
+ValeurCmp = LM2576TV-ADJG;
+IdModule  = LM2576_TO-220-5_NDH0005D_HEATSINK;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA0D28;
+Reference = L1;
+ValeurCmp = 100uH,>=3.6A.,toroid;
+IdModule  = inductor_toroid-bourns_pm2120;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ADDD65;
+Reference = L2;
+ValeurCmp = 22uH,>=3.6A.,toroid;
+IdModule  = inductor_toroid-bourns_pm2120;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA2DF4;
+Reference = P1;
+ValeurCmp = CONN_2;
+IdModule  = TE_Connectivity_AMP_350209-1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54CD9DA8;
+Reference = P2;
+ValeurCmp = MOLEX_15-24-4449;
+IdModule  = MOLEX-15-24-4449;
+EndCmp
+
+BeginCmp
+TimeStamp = /54CD9DB5;
+Reference = P3;
+ValeurCmp = MOLEX_15-24-4449;
+IdModule  = MOLEX-15-24-4449;
+EndCmp
+
+BeginCmp
+TimeStamp = /54CD9DBB;
+Reference = P4;
+ValeurCmp = MOLEX_15-24-4449;
+IdModule  = MOLEX-15-24-4449;
+EndCmp
+
+BeginCmp
+TimeStamp = /54CD9DC1;
+Reference = P5;
+ValeurCmp = MOLEX_15-24-4449;
+IdModule  = MOLEX-15-24-4449;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ADF80F;
+Reference = Q1;
+ValeurCmp = BC547;
+IdModule  = to92-TO92;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ADF4E2;
+Reference = R1;
+ValeurCmp = 20K;
+IdModule  = resistor_250milliwatt-TE_Connectivity_LR0204;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ADF4F9;
+Reference = R2;
+ValeurCmp = 10K;
+IdModule  = resistor_250milliwatt-TE_Connectivity_LR0204;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ADF632;
+Reference = R3;
+ValeurCmp = 20K;
+IdModule  = resistor_250milliwatt-TE_Connectivity_LR0204;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA955F;
+Reference = R4;
+ValeurCmp = 1K8,>=1_W.;
+IdModule  = R7;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DBCE5A;
+Reference = R5;
+ValeurCmp = 2K87;0.1%;
+IdModule  = resistor_250milliwatt-TE_Connectivity_LR0204;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DBCCB4;
+Reference = R6;
+ValeurCmp = 1K;0.1%;
+IdModule  = resistor_250milliwatt-TE_Connectivity_LR0204;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA8A16;
+Reference = R7;
+ValeurCmp = 270R;
+IdModule  = resistor_250milliwatt-TE_Connectivity_LR0204;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DBCE60;
+Reference = R8;
+ValeurCmp = 196R;0.1%;
+IdModule  = resistor_250milliwatt-TE_Connectivity_LR0204;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA7CE8;
+Reference = R9;
+ValeurCmp = 270R;
+IdModule  = resistor_250milliwatt-TE_Connectivity_LR0204;
+EndCmp
+
+EndListe

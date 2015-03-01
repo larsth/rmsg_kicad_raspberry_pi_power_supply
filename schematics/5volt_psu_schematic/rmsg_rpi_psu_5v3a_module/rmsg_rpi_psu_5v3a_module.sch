@@ -1,0 +1,890 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:75lbc179
+LIBS:fod060l
+LIBS:2n7000
+LIBS:75176
+LIBS:lm2576
+LIBS:dmmt5401
+LIBS:dmg2305ux
+LIBS:si2369ds
+LIBS:molex_15-24-4449
+LIBS:rj45_wo_shield
+LIBS:m2_5_drill_hole
+LIBS:rmsg_rpi_psu_5v3a_module-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "RMSG +5 volt, Power supply"
+Date "20 feb 2015"
+Rev ""
+Comp "RMSG - Raket Madsens Support Gruppe"
+Comment1 "Designed by: Lars Tørnes Hansen"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CP1 C3
+U 1 1 54A8EBD0
+P 6300 3355
+F 0 "C3" H 6300 3245 50  0000 L CNN
+F 1 "1000uF,25V.,low-ESR" V 6180 3135 25  0000 L CNN
+F 2 "capacitor_multicomp_GPR_1000uF" H 6300 3355 60  0001 C CNN
+F 3 "~" H 6300 3355 60  0000 C CNN
+	1    6300 3355
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 54A8EBDD
+P 3740 3355
+F 0 "C2" H 3630 3520 50  0000 L CNN
+F 1 "100uF,63V.,low-ESR" V 3875 3210 25  0000 L CNN
+F 2 "capacitor_panasonic_fr_a_100uf" H 3740 3355 60  0001 C CNN
+F 3 "~" H 3740 3355 60  0000 C CNN
+	1    3740 3355
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 54A8ED6F
+P 2715 3185
+F 0 "C1" H 2610 3300 40  0000 L CNN
+F 1 "100nF" H 2600 3110 40  0000 L CNN
+F 2 "C1" H 2753 3035 30  0001 C CNN
+F 3 "~" H 2715 3185 60  0000 C CNN
+	1    2715 3185
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 54A8EED0
+P 6750 3450
+F 0 "C4" H 6750 3550 40  0000 L CNN
+F 1 "100nF" H 6635 3370 40  0000 L CNN
+F 2 "C1" H 6788 3300 30  0001 C CNN
+F 3 "~" H 6750 3450 60  0000 C CNN
+	1    6750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 54A8F164
+P 8575 3110
+F 0 "#PWR01" H 8575 3200 20  0001 C CNN
+F 1 "+5V" H 8575 3200 30  0000 C CNN
+F 2 "" H 8575 3110 60  0000 C CNN
+F 3 "" H 8575 3110 60  0000 C CNN
+	1    8575 3110
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 54A8F18B
+P 6870 3110
+F 0 "#FLG02" H 6870 3205 30  0001 C CNN
+F 1 "PWR_FLAG" H 6870 3290 30  0000 C CNN
+F 2 "" H 6870 3110 60  0000 C CNN
+F 3 "" H 6870 3110 60  0000 C CNN
+	1    6870 3110
+	1    0    0    -1  
+$EndComp
+$Comp
+L FUSE F1
+U 1 1 54A8F7D2
+P 630 3420
+F 0 "F1" H 710 3440 40  0000 C CNN
+F 1 "T.2.5A." H 590 3300 40  0000 C CNN
+F 2 "fuse_holder_5mm_x_20mm_schurter" H 630 3420 60  0001 C CNN
+F 3 "~" H 630 3420 60  0000 C CNN
+	1    630  3420
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LM2576TV-ADJG IC1
+U 1 1 54AA044D
+P 4690 2645
+F 0 "IC1" H 4205 1825 60  0000 C CNN
+F 1 "LM2576TV-ADJG" H 4710 1825 60  0000 C CNN
+F 2 "LM2576_TO-220-5_NDH0005D_HEATSINK" H 4690 2645 60  0001 C CNN
+F 3 "~" H 4690 2645 60  0000 C CNN
+	1    4690 2645
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODESCH D7
+U 1 1 54AA0839
+P 5800 3420
+F 0 "D7" V 5710 3365 40  0000 C CNN
+F 1 "SB560" H 5815 3510 40  0000 C CNN
+F 2 "do201-15-DO201-15" H 5800 3420 60  0001 C CNN
+F 3 "~" H 5800 3420 60  0000 C CNN
+	1    5800 3420
+	0    -1   -1   0   
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 54AA0D28
+P 5960 3155
+F 0 "L1" V 5910 3155 40  0000 C CNN
+F 1 "100uH,>=3.6A.,toroid" V 6050 3175 25  0000 C CNN
+F 2 "inductor_toroid-bourns_pm2120" H 5960 3155 60  0001 C CNN
+F 3 "~" H 5960 3155 60  0000 C CNN
+	1    5960 3155
+	0    -1   -1   0   
+$EndComp
+Text Notes 1760 4940 0    60   ~ 0
+              Vin: \n      14 VDC - 36 VDC,\n10 VAC(RMS) - 25 VAC(RMS)
+Text Notes 8615 3085 0    25   ~ 0
+< 2,5 A.
+$Comp
+L CONN_2 P1
+U 1 1 54AA2DF4
+P 1590 5010
+F 0 "P1" H 1580 5010 40  0000 C CNN
+F 1 "CONN_2" V 1640 5010 40  0001 C CNN
+F 2 "TE_Connectivity_AMP_350209-1" H 1590 5010 60  0001 C CNN
+F 3 "" H 1590 5010 60  0000 C CNN
+	1    1590 5010
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 54AA3298
+P 940 4390
+F 0 "#FLG03" H 940 4485 30  0001 C CNN
+F 1 "PWR_FLAG" H 940 4570 30  0000 C CNN
+F 2 "" H 940 4390 60  0000 C CNN
+F 3 "" H 940 4390 60  0000 C CNN
+	1    940  4390
+	-1   0    0    1   
+$EndComp
+$Comp
+L FUSE F2
+U 1 1 54AA77AA
+P 7425 3155
+F 0 "F2" H 7490 3160 40  0000 C CNN
+F 1 "T.2.5A." H 7340 3060 40  0000 C CNN
+F 2 "fuse_holder_5mm_x_20mm_schurter" H 7425 3155 60  0001 C CNN
+F 3 "~" H 7425 3155 60  0000 C CNN
+	1    7425 3155
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R9
+U 1 1 54AA7CE8
+P 7515 3325
+F 0 "R9" V 7430 3315 40  0000 C CNN
+F 1 "270R" V 7520 3325 40  0000 C CNN
+F 2 "resistor_250milliwatt-TE_Connectivity_LR0204" V 7445 3325 30  0001 C CNN
+F 3 "~" H 7515 3325 30  0000 C CNN
+	1    7515 3325
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D9
+U 1 1 54AA7EA2
+P 7265 3560
+F 0 "D9" V 7190 3675 50  0000 C CNN
+F 1 "GREEN" V 7305 3390 50  0000 C CNN
+F 2 "led5mm-LED5MM" H 7340 3355 60  0001 C CNN
+F 3 "~" H 7265 3560 60  0000 C CNN
+	1    7265 3560
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D8
+U 1 1 54AA8A10
+P 5990 3940
+F 0 "D8" H 5880 4000 50  0000 C CNN
+F 1 "YELLOW" H 5990 3840 50  0000 C CNN
+F 2 "led5mm-LED5MM" H 5930 4090 60  0001 C CNN
+F 3 "~" H 5990 3940 60  0000 C CNN
+	1    5990 3940
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R7
+U 1 1 54AA8A16
+P 6500 3940
+F 0 "R7" V 6580 3940 40  0000 C CNN
+F 1 "270R" V 6500 3940 40  0000 C CNN
+F 2 "resistor_250milliwatt-TE_Connectivity_LR0204" V 6430 3940 30  0001 C CNN
+F 3 "~" H 6500 3940 30  0000 C CNN
+	1    6500 3940
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 54AA955F
+P 1610 3420
+F 0 "R4" V 1690 3420 40  0000 C CNN
+F 1 "1K8,>=1_W." V 1535 3420 40  0000 C CNN
+F 2 "R7" V 1540 3420 30  0001 C CNN
+F 3 "~" H 1610 3420 30  0000 C CNN
+	1    1610 3420
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D5
+U 1 1 54AA9565
+P 2120 3420
+F 0 "D5" H 2255 3480 50  0000 C CNN
+F 1 "RED" H 2120 3320 50  0000 C CNN
+F 2 "led5mm-LED5MM" H 2130 3540 60  0001 C CNN
+F 3 "~" H 2120 3420 60  0000 C CNN
+	1    2120 3420
+	1    0    0    -1  
+$EndComp
+Text Notes 3280 2000 0    60   ~ 0
+IC1, min. efficency: 0,77, Heatsink must remove: \nNormal operation:  (5x2,5)x(1 - 0,77) = 2,875 Watt \nShort circuit: (0,4x35,6x2,5) = 35,6 Watt; where:\n "0,4" is extra reduced duty cycle, \n"2,5" is 2,5 ampere, and "35,6" is maximum input \nvoltage after Graetz bridge.
+$Comp
+L DIODESCH D1
+U 1 1 54AB9E51
+P 940 3020
+F 0 "D1" V 1055 2975 40  0000 C CNN
+F 1 "SB560" H 850 2935 40  0000 C CNN
+F 2 "do201-15-DO201-15" H 940 3020 60  0001 C CNN
+F 3 "~" H 940 3020 60  0000 C CNN
+	1    940  3020
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODESCH D4
+U 1 1 54AB9E57
+P 1240 3850
+F 0 "D4" V 1400 3900 40  0000 C CNN
+F 1 "SB560" H 1210 3760 40  0000 C CNN
+F 2 "do201-15-DO201-15" H 1240 3850 60  0001 C CNN
+F 3 "~" H 1240 3850 60  0000 C CNN
+	1    1240 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODESCH D3
+U 1 1 54AB9E63
+P 1240 3030
+F 0 "D3" V 1120 2980 40  0000 C CNN
+F 1 "SB560" H 1255 3120 40  0000 C CNN
+F 2 "do201-15-DO201-15" H 1240 3030 60  0001 C CNN
+F 3 "~" H 1240 3030 60  0000 C CNN
+	1    1240 3030
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODESCH D2
+U 1 1 54AB9E5D
+P 940 3850
+F 0 "D2" V 815 3905 40  0000 C CNN
+F 1 "SB560" H 975 3935 40  0000 C CNN
+F 2 "do201-15-DO201-15" H 940 3850 60  0001 C CNN
+F 3 "~" H 940 3850 60  0000 C CNN
+	1    940  3850
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 54AC71E6
+P 940 2710
+F 0 "#FLG04" H 940 2805 30  0001 C CNN
+F 1 "PWR_FLAG" H 940 2890 30  0000 C CNN
+F 2 "" H 940 2710 60  0000 C CNN
+F 3 "" H 940 2710 60  0000 C CNN
+	1    940  2710
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 54AC85D2
+P 2320 2680
+F 0 "#FLG05" H 2320 2775 30  0001 C CNN
+F 1 "PWR_FLAG" H 2320 2860 30  0000 C CNN
+F 2 "" H 2320 2680 60  0000 C CNN
+F 3 "" H 2320 2680 60  0000 C CNN
+	1    2320 2680
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L2
+U 1 1 54ADDD65
+P 8060 3155
+F 0 "L2" V 8215 3155 40  0000 C CNN
+F 1 "22uH,>=3.6A.,toroid" V 8150 3175 25  0000 C CNN
+F 2 "inductor_toroid-bourns_pm2120" H 8060 3155 60  0001 C CNN
+F 3 "~" H 8060 3155 60  0000 C CNN
+	1    8060 3155
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP1 C5
+U 1 1 54ADE29D
+P 8360 3525
+F 0 "C5" H 8225 3405 50  0000 L CNN
+F 1 "100uF,25V.,low-ESR" V 8485 3310 25  0000 L CNN
+F 2 "capacitor_panasonic_fr_a_100uf" H 8360 3525 60  0001 C CNN
+F 3 "~" H 8360 3525 60  0000 C CNN
+	1    8360 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 54ADF4E2
+P 2905 2960
+F 0 "R1" H 2805 2955 40  0000 C CNN
+F 1 "20K" V 2912 2961 40  0000 C CNN
+F 2 "resistor_250milliwatt-TE_Connectivity_LR0204" V 2835 2960 30  0001 C CNN
+F 3 "~" H 2905 2960 30  0000 C CNN
+	1    2905 2960
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 54ADF4F9
+P 2905 3510
+F 0 "R2" H 2800 3605 40  0000 C CNN
+F 1 "10K" V 2912 3511 40  0000 C CNN
+F 2 "resistor_250milliwatt-TE_Connectivity_LR0204" V 2835 3510 30  0001 C CNN
+F 3 "~" H 2905 3510 30  0000 C CNN
+	1    2905 3510
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 54ADF632
+P 3365 2960
+F 0 "R3" H 3260 2960 40  0000 C CNN
+F 1 "20K" V 3372 2961 40  0000 C CNN
+F 2 "resistor_250milliwatt-TE_Connectivity_LR0204" V 3295 2960 30  0001 C CNN
+F 3 "~" H 3365 2960 30  0000 C CNN
+	1    3365 2960
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC547 Q1
+U 1 1 54ADF80F
+P 3265 3495
+F 0 "Q1" H 3530 3455 40  0000 R CNN
+F 1 "BC547" H 3600 3580 40  0000 R CNN
+F 2 "to92-TO92" H 3505 3515 29  0001 C CNN
+F 3 "" H 3265 3495 60  0000 C CNN
+	1    3265 3495
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENERSMALL D6
+U 1 1 54AE049F
+P 3065 3310
+F 0 "D6" V 3065 3220 40  0000 C CNN
+F 1 "8V7, Zener" V 2995 3230 30  0001 C CNN
+F 2 "DO-35" H 3065 3310 60  0001 C CNN
+F 3 "~" H 3065 3310 60  0000 C CNN
+	1    3065 3310
+	0    -1   -1   0   
+$EndComp
+Text Notes 2910 3855 0    30   ~ 0
+  UNDERVOLTAGE \nLOCKOUT CIRCUIT\n
+Text Notes 7980 3465 0    30   ~ 0
+RIPPLE\nFILTER
+Wire Wire Line
+	630  2770 1240 2770
+Wire Wire Line
+	2320 2710 3540 2710
+Connection ~ 2715 2710
+Wire Wire Line
+	2715 2710 2715 2985
+Wire Wire Line
+	2710 3760 2715 3385
+Connection ~ 2710 3760
+Connection ~ 2715 3385
+Connection ~ 2715 2985
+Connection ~ 3540 2710
+Connection ~ 3540 2845
+Connection ~ 5620 2730
+Connection ~ 5625 3320
+Wire Wire Line
+	3150 2580 5620 2580
+Wire Wire Line
+	5620 2580 5620 2730
+Wire Wire Line
+	5695 3760 5625 3320
+Wire Wire Line
+	3540 2710 3740 3155
+Connection ~ 3740 3155
+Wire Wire Line
+	5695 3760 3740 3555
+Connection ~ 3740 3555
+Connection ~ 5695 3760
+Connection ~ 5625 3155
+Wire Wire Line
+	5625 3155 5660 3155
+Connection ~ 5660 3155
+Connection ~ 6260 3155
+Wire Wire Line
+	5695 3760 6300 3555
+Connection ~ 6300 3555
+Connection ~ 6300 3155
+Wire Wire Line
+	6260 3155 7175 3155
+Wire Wire Line
+	3490 2845 3490 2510
+Wire Wire Line
+	3490 2510 6340 2510
+Wire Wire Line
+	6750 3760 6750 3650
+Connection ~ 6750 3760
+Wire Wire Line
+	6750 3250 6750 3155
+Connection ~ 6750 3155
+Connection ~ 6750 3650
+Connection ~ 6750 3250
+Connection ~ 7175 3155
+Connection ~ 7675 3155
+Wire Wire Line
+	6190 3940 6250 3940
+Wire Wire Line
+	5790 3940 5695 3940
+Wire Wire Line
+	5695 3940 5695 3760
+Connection ~ 6250 3940
+Connection ~ 6190 3940
+Connection ~ 5790 3940
+Wire Wire Line
+	7675 3155 7760 3155
+Connection ~ 7760 3155
+Connection ~ 8360 3155
+Wire Wire Line
+	9800 3155 8360 3155
+Wire Wire Line
+	8360 3155 8360 3325
+Connection ~ 8360 3325
+Wire Wire Line
+	8360 3325 7765 3325
+Connection ~ 7765 3325
+Wire Wire Line
+	3540 2845 3490 2845
+Connection ~ 2905 3760
+Connection ~ 2905 2710
+Connection ~ 3365 2710
+Connection ~ 2905 3260
+Connection ~ 2905 3210
+Wire Wire Line
+	3365 3210 3365 3295
+Connection ~ 3365 3295
+Connection ~ 3365 3210
+Wire Wire Line
+	3365 3760 3365 3695
+Connection ~ 3365 3760
+Connection ~ 3365 3695
+Wire Wire Line
+	3065 3495 2985 3495
+Wire Wire Line
+	2985 3495 2985 3260
+Wire Wire Line
+	2985 3260 2905 3260
+Wire Wire Line
+	2905 3210 3065 3210
+Connection ~ 3065 3210
+Connection ~ 3065 3495
+Connection ~ 3065 3410
+Wire Wire Line
+	3365 3255 3150 3255
+Wire Wire Line
+	3150 3255 3150 2580
+Connection ~ 3365 3255
+Wire Notes Line
+	2800 2505 3445 2505
+Wire Notes Line
+	3445 2505 3445 3925
+Wire Notes Line
+	3445 3925 2800 3925
+Wire Notes Line
+	2800 3925 2800 2505
+Wire Wire Line
+	7265 3360 7265 3325
+Connection ~ 7265 3325
+Connection ~ 7265 3360
+Connection ~ 7265 3760
+Wire Notes Line
+	7715 2955 7715 3845
+Wire Notes Line
+	7715 3845 8505 3845
+Wire Notes Line
+	8505 3845 8505 2955
+Wire Notes Line
+	8505 2955 7715 2955
+Wire Wire Line
+	3065 3410 3065 3495
+Wire Wire Line
+	2320 3760 10000 3760
+Wire Wire Line
+	8360 3760 8360 3725
+Connection ~ 8360 3725
+Wire Wire Line
+	8575 3155 8575 3110
+Connection ~ 8575 3110
+$Comp
+L MOLEX_15-24-4449 P2
+U 1 1 54CD9DA8
+P 10550 2040
+F 0 "P2" H 10550 1690 60  0000 C CNN
+F 1 "MOLEX_15-24-4449" H 10650 2390 60  0000 C CNN
+F 2 "MOLEX-15-24-4449" H 10550 2040 60  0001 C CNN
+F 3 "~" H 10550 2040 60  0000 C CNN
+	1    10550 2040
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOLEX_15-24-4449 P3
+U 1 1 54CD9DB5
+P 10550 2940
+F 0 "P3" H 10550 2590 60  0000 C CNN
+F 1 "MOLEX_15-24-4449" H 10650 3290 60  0001 C CNN
+F 2 "MOLEX-15-24-4449" H 10550 2940 60  0001 C CNN
+F 3 "~" H 10550 2940 60  0000 C CNN
+	1    10550 2940
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOLEX_15-24-4449 P4
+U 1 1 54CD9DBB
+P 10550 3840
+F 0 "P4" H 10550 3490 60  0000 C CNN
+F 1 "MOLEX_15-24-4449" H 10650 4190 60  0001 C CNN
+F 2 "MOLEX-15-24-4449" H 10550 3840 60  0001 C CNN
+F 3 "~" H 10550 3840 60  0000 C CNN
+	1    10550 3840
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOLEX_15-24-4449 P5
+U 1 1 54CD9DC1
+P 10550 4740
+F 0 "P5" H 10550 4390 60  0000 C CNN
+F 1 "MOLEX_15-24-4449" H 10650 5090 60  0001 C CNN
+F 2 "MOLEX-15-24-4449" H 10550 4740 60  0001 C CNN
+F 3 "~" H 10550 4740 60  0000 C CNN
+	1    10550 4740
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 4840 10300 4840
+Wire Wire Line
+	10000 3940 10300 3940
+Wire Wire Line
+	10000 3040 10300 3040
+Connection ~ 10000 3940
+Connection ~ 10000 3040
+Wire Wire Line
+	10000 2890 10300 2890
+Wire Wire Line
+	10000 3790 10300 3790
+Wire Wire Line
+	9800 4540 10300 4540
+Wire Wire Line
+	9800 1840 9800 4540
+Wire Wire Line
+	9800 3640 10300 3640
+Wire Wire Line
+	10300 2740 9800 2740
+Connection ~ 9800 3640
+Connection ~ 9800 2740
+$Comp
+L GND #PWR06
+U 1 1 54CDB8DF
+P 10000 4990
+F 0 "#PWR06" H 10000 4990 30  0001 C CNN
+F 1 "GND" H 10000 4920 30  0001 C CNN
+F 2 "" H 10000 4990 60  0000 C CNN
+F 3 "" H 10000 4990 60  0000 C CNN
+	1    10000 4990
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 1990 10000 4990
+Connection ~ 10000 4840
+Connection ~ 10300 2740
+Connection ~ 10300 2890
+Connection ~ 10300 3040
+Connection ~ 10300 3640
+Connection ~ 10300 3790
+Connection ~ 10300 3940
+Connection ~ 10300 4540
+Connection ~ 10300 4840
+Connection ~ 10000 4990
+Wire Wire Line
+	6870 3940 6750 3940
+Wire Wire Line
+	6870 3110 6870 3940
+Connection ~ 6870 3155
+Connection ~ 6870 3110
+$Comp
+L R R6
+U 1 1 54DBCCB4
+P 6480 3455
+F 0 "R6" H 6420 3265 40  0000 C CNN
+F 1 "1K;0.1%" V 6487 3456 40  0000 C CNN
+F 2 "resistor_250milliwatt-TE_Connectivity_LR0204" V 6410 3455 30  0001 C CNN
+F 3 "~" H 6480 3455 30  0000 C CNN
+	1    6480 3455
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6480 3705 6480 3760
+Connection ~ 6480 3760
+Connection ~ 6480 3705
+$Comp
+L R R5
+U 1 1 54DBCE5A
+P 6480 2760
+F 0 "R5" H 6415 2570 40  0000 C CNN
+F 1 "2K87;0.1%" V 6485 2775 40  0000 C CNN
+F 2 "resistor_250milliwatt-TE_Connectivity_LR0204" V 6410 2760 30  0001 C CNN
+F 3 "~" H 6480 2760 30  0000 C CNN
+	1    6480 2760
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 54DBCE60
+P 6610 2760
+F 0 "R8" H 6670 2565 40  0000 C CNN
+F 1 "196R;0.1%" V 6615 2775 40  0000 C CNN
+F 2 "resistor_250milliwatt-TE_Connectivity_LR0204" V 6540 2760 30  0001 C CNN
+F 3 "~" H 6610 2760 30  0000 C CNN
+	1    6610 2760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6610 3010 6610 3155
+Connection ~ 6610 3155
+Connection ~ 6610 3010
+Wire Wire Line
+	6480 3010 6480 3205
+Connection ~ 6480 3205
+Connection ~ 6480 3010
+Wire Wire Line
+	6340 2510 6340 3080
+Wire Wire Line
+	6340 3080 6480 3080
+Connection ~ 6480 3080
+Wire Wire Line
+	6480 2510 6610 2510
+Connection ~ 6480 2510
+Connection ~ 6610 2510
+Wire Wire Line
+	5695 3760 5800 3620
+Connection ~ 5800 3620
+Wire Wire Line
+	5625 3155 5800 3220
+Connection ~ 5800 3220
+Wire Wire Line
+	10300 4690 10000 4690
+Connection ~ 10000 4690
+Connection ~ 10300 4690
+Connection ~ 10000 3790
+Connection ~ 10000 2890
+$Comp
+L GND #PWR07
+U 1 1 54E2C884
+P 7030 3820
+F 0 "#PWR07" H 7030 3820 30  0001 C CNN
+F 1 "GND" H 7030 3750 30  0001 C CNN
+F 2 "" H 7030 3820 60  0000 C CNN
+F 3 "" H 7030 3820 60  0000 C CNN
+	1    7030 3820
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7030 3820 7030 3760
+Connection ~ 7030 3760
+Connection ~ 7030 3820
+Connection ~ 9800 3155
+Connection ~ 8575 3155
+Connection ~ 10000 3760
+Connection ~ 8360 3760
+$Comp
+L PWR_FLAG #FLG08
+U 1 1 54E2D03F
+P 8880 3105
+F 0 "#FLG08" H 8880 3200 30  0001 C CNN
+F 1 "PWR_FLAG" H 8880 3285 30  0000 C CNN
+F 2 "" H 8880 3105 60  0000 C CNN
+F 3 "" H 8880 3105 60  0000 C CNN
+	1    8880 3105
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8880 3105 8880 3155
+Connection ~ 8880 3155
+Connection ~ 8880 3105
+$Comp
+L PWR_FLAG #FLG09
+U 1 1 54E2D20F
+P 2320 3800
+F 0 "#FLG09" H 2320 3895 30  0001 C CNN
+F 1 "PWR_FLAG" H 2320 3980 30  0000 C CNN
+F 2 "" H 2320 3800 60  0000 C CNN
+F 3 "" H 2320 3800 60  0000 C CNN
+	1    2320 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	940  3650 940  3220
+Wire Wire Line
+	1240 3650 1240 3230
+Wire Wire Line
+	1240 2770 1240 2830
+Wire Wire Line
+	940  2710 940  2820
+Connection ~ 940  2770
+Wire Wire Line
+	940  4050 940  4390
+Wire Wire Line
+	1240 4050 1240 4910
+Connection ~ 1240 4050
+Connection ~ 940  4050
+Connection ~ 940  3650
+Connection ~ 1240 3650
+Connection ~ 940  3220
+Connection ~ 1240 3230
+Connection ~ 940  2820
+Connection ~ 1240 2830
+Wire Wire Line
+	2320 3420 2320 3800
+Wire Wire Line
+	2320 3580 940  3580
+Connection ~ 940  3580
+Wire Wire Line
+	1240 3280 1500 3280
+Wire Wire Line
+	1500 3280 1500 2780
+Wire Wire Line
+	1500 2780 2320 2780
+Connection ~ 1240 3280
+Wire Wire Line
+	1360 3420 1240 3420
+Connection ~ 1240 3420
+Connection ~ 1360 3420
+Wire Wire Line
+	1240 4320 940  4320
+Connection ~ 1240 4320
+Connection ~ 940  4320
+Connection ~ 940  4390
+Wire Wire Line
+	630  5110 1240 5110
+Wire Wire Line
+	630  3670 630  5110
+Wire Wire Line
+	630  2770 630  3170
+Connection ~ 2320 3580
+Connection ~ 2320 3760
+Connection ~ 2320 3800
+Wire Wire Line
+	2320 2780 2320 2680
+Connection ~ 2320 2710
+Connection ~ 2320 3420
+Wire Wire Line
+	1860 3420 1920 3420
+Connection ~ 1860 3420
+Connection ~ 1920 3420
+Wire Wire Line
+	10300 1840 9800 1840
+Wire Wire Line
+	10300 1990 10000 1990
+Wire Wire Line
+	10300 2140 10000 2140
+Connection ~ 10000 2140
+Connection ~ 940  2710
+Connection ~ 630  3170
+Connection ~ 630  3670
+$Comp
+L M2_5_DRILL_HOLE DRILL_HOLE1
+U 1 1 54E6AB64
+P 5470 5630
+F 0 "DRILL_HOLE1" H 5420 5330 60  0001 C CNN
+F 1 "M2_5_DRILL_HOLE" H 5470 5930 60  0001 C CNN
+F 2 "M2_50mm-Drill_hole_M2_85mm" H 5470 5630 60  0001 C CNN
+F 3 "~" H 5470 5630 60  0000 C CNN
+	1    5470 5630
+	1    0    0    -1  
+$EndComp
+$Comp
+L M2_5_DRILL_HOLE DRILL_HOLE2
+U 1 1 54E6AB71
+P 5970 5640
+F 0 "DRILL_HOLE2" H 5920 5340 60  0001 C CNN
+F 1 "M2_5_DRILL_HOLE" H 5970 5940 60  0001 C CNN
+F 2 "M2_50mm-Drill_hole_M2_85mm" H 5970 5640 60  0001 C CNN
+F 3 "~" H 5970 5640 60  0000 C CNN
+	1    5970 5640
+	1    0    0    -1  
+$EndComp
+$Comp
+L M2_5_DRILL_HOLE DRILL_HOLE3
+U 1 1 54E6AB77
+P 6490 5630
+F 0 "DRILL_HOLE3" H 6440 5330 60  0001 C CNN
+F 1 "M2_5_DRILL_HOLE" H 6490 5930 60  0001 C CNN
+F 2 "M2_50mm-Drill_hole_M2_85mm" H 6490 5630 60  0001 C CNN
+F 3 "~" H 6490 5630 60  0000 C CNN
+	1    6490 5630
+	1    0    0    -1  
+$EndComp
+$Comp
+L M2_5_DRILL_HOLE DRILL_HOLE4
+U 1 1 54E6AB7D
+P 7010 5630
+F 0 "DRILL_HOLE4" H 6960 5330 60  0001 C CNN
+F 1 "M2_5_DRILL_HOLE" H 7010 5930 60  0001 C CNN
+F 2 "M2_50mm-Drill_hole_M2_85mm" H 7010 5630 60  0001 C CNN
+F 3 "~" H 7010 5630 60  0000 C CNN
+	1    7010 5630
+	1    0    0    -1  
+$EndComp
+Text Notes 6000 5300 0    60   ~ 0
+Drill holes
+Wire Wire Line
+	10190 4990 10300 4990
+Wire Wire Line
+	10190 2290 10190 4990
+Wire Wire Line
+	10190 4090 10300 4090
+Wire Wire Line
+	10300 3190 10190 3190
+Connection ~ 10190 4090
+Wire Wire Line
+	10300 2290 10190 2290
+Connection ~ 10190 3190
+$EndSCHEMATC
